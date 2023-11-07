@@ -1,0 +1,24 @@
+/* index */
+.w160 {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper {
+max-width: 200px;
+height: 100%;
+}
+.imgwrap{
+width: 160x;
+height: 160px;
+/* width: 100%; */
+/* height: 100%; */
+}
+@media (max-width: 390px) {
+.imgwrap{
+  width: 136x;
+  height: 136px;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+}

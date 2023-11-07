@@ -1,0 +1,479 @@
+// .pageContainer {
+//   background-color: #22333B;
+//   background-position: top center;
+//   background-repeat: no-repeat;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .pageContainer2 {
+//   background-color: #22333B;
+//   background-position: top center;
+//   background-repeat: no-repeat;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .flexContainer {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+// }
+
+// .iframeBlock{
+//   height: 1100px;
+//   width: 980px;
+// }
+
+
+
+// .breadcrumbAndImage {
+//   margin-left: 20px;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .cardContainer {
+//   margin-top: 65px;
+//   margin-left: 20px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .blockMask {
+//   width: 1200px;
+//   height: 1270px;
+//   background-color: #212A2E;
+//   margin-top: 30px;
+// }
+
+// .buttonContainer {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: flex-end;
+//   position: relative;
+//   margin-top: 600px;
+//   margin-right: 20px;
+//   margin-bottom: 20px;
+  
+//   .button {
+//     background-color: #5E503F;
+//     width: 180px;
+//     height: 43px;
+//     border-radius: 5em;
+//     color: white;
+//     border: none;
+//     cursor: pointer;
+//   }
+// }
+
+// .headerStyle {
+//   color: black;
+//   display: inline-block;
+//   background-color: #C6AC8F;
+//   margin: 10px;
+//   text-align: center;
+
+//   .titleintroduce,.titleintroduceTwo,.introduceStyle {
+//     padding-block: 10px;
+//     padding-inline: 18px;
+//     font-size: 18.72px;
+//     font-weight: 700;
+//   }
+// }
+
+// .introduceStyle {
+//   margin: 16px;
+//   color: #eae0d5;
+// }
+
+// .section2 {
+//   background-color: #22333B;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+// }
+
+// .blockMask2 {
+//   width: 1200px;
+//   height: 1056px;
+//   background-color: #212A2E;
+//   margin-top: 30px;
+//   margin-bottom: 30px;
+// }
+
+// .mySwiper {
+//   width: 100%;
+//   padding-top: 50px;
+//   padding-bottom: 50px;
+
+//   .swiper-slide {
+//     background-position: center;
+//     background-size: cover;
+//     width: 100px;
+//     height: 100px;
+
+//     img {
+//       display: block;
+//       width: 100%;
+//     }
+//   }
+// }
+
+// .introducepageStyle{
+//   background-color: #212A2E;
+//   width: 1206px;  
+//   // height: 984px;
+// }
+
+// .cardContainerStyle {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   align-items: center;
+//   justify-content: center;
+//   gap: 10px;
+// }
+// .headerStyle {
+//   color: black;
+//   display: inline-block;
+//   background-color: #C6AC8F; /* 背景顏色，可以根據需要更改 */
+//   text-align: center; /* 文字水平居中對齊 */
+//   .titleCourse{
+//               padding-block: 10px;
+//               padding-inline: 18px;
+//               font-size: 18.72px;
+//               font-weight: 700;
+//   }
+// }
+// .introduceStyle{
+//   margin: 16px;
+//   color:#eae0d5;
+// }
+// .lessonStyle{
+//   color: #EAE0D5;
+// }
+// .lessonStyle li{
+//   line-height: 40px;
+// }
+// .pageContainer3 {
+// margin-bottom: 30px;
+// background-color: #22333B;
+// background-position: top center;
+// background-repeat: no-repeat;
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// }
+
+// @media (max-width: 390px) {
+//   .flexContainer {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+
+//   .breadcrumbAndImage, .cardContainer {
+//     margin-left: 0;
+//     margin-right: 0;
+//     width: 100%;
+//   }
+
+//   .breadcrumbStyle, .headerStyle {
+//     text-align: center;
+//     margin: auto;
+//   }
+//   .introducepageStyle{
+//     width: 390px;
+//   }
+//   .introduceStyle{
+//     text-align: center;
+//     width: 330px;
+//   }
+//   .blockMask{
+//     text-align: center;
+//     width: 330px;
+//     height: 850px;
+//   }
+//    .pidBody,  .blockMask2 {
+//     text-align: center;
+//     width: 330px;
+//   }
+//   .imageBlock{
+//     margin-left: 5px;
+//   }
+//   .imageContainer {
+//     width: 330px;
+//     height: 300px;
+//   }
+
+//   .iframeBlock {
+//     width: 390px;
+//     height: 100%;
+//   }
+//   .googleMapBlock{
+//     margin-top: 10px;
+//     width: 330px;
+//     height: 390px;
+//   }
+  
+//   .iframeContainer iframe {
+//     width: 390px !important;
+//   }
+  
+// }
+
+/* index */
+
+.pageContainer {
+  background-color: #22333B;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Taipei Sans TC Beta';
+}
+
+.pageContainer2 {
+  background-color: #22333B;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.iframeBlock {
+  width: 100%;   
+}
+
+.googleMapBlock {
+  width: 100%;
+  height: 100%;
+  border: none; 
+}
+
+.imageContainer {
+  margin-top: 50px;
+  width: 600px;
+  height: 300px;
+}
+
+.breadcrumbAndImage {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainer {
+  margin-top: 65px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockMask {
+  width: 1200px;
+  height: 1270px;
+  background-color: #212A2E;
+  margin-top: 30px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  margin-top: 600px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  
+  .button {
+    background-color: #5E503F;
+    width: 180px;
+    height: 43px;
+    border-radius: 5em;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.headerStyle {
+  color: black;
+  display: inline-block;
+  background-color: #C6AC8F;
+  margin: 10px;
+  text-align: center;
+
+  .titleintroduce,.titleintroduceTwo,.introduceStyle {
+    padding-block: 10px;
+    padding-inline: 18px;
+    font-size: 18.72px;
+    font-weight: 700;
+  }
+}
+
+.introduceStyle {
+  margin: 16px;
+  color: #eae0d5;
+}
+
+.section2 {
+  background-color: #22333B;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.blockMask2 {
+  width: 1200px;
+  height: 1056px;
+  background-color: #212A2E;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mySwiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.lessonStyle{
+  color: white;
+  text-align: left;
+
+}
+
+@media (max-width: 390px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breadcrumbAndImage, .cardContainer {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .breadcrumbStyle, .headerStyle {
+    text-align: center;
+    margin: auto;
+  }
+  .introduceStyle{
+    padding-right: 25px;
+    text-align: center;
+    width: 330px;
+  }
+  .blockMask{
+    text-align: center;
+    width: 330px;
+    height: 850px;
+  }
+   .pidBody,  .blockMask2 {
+    text-align: center;
+    width: 330px;
+  }
+  .imageBlock{
+    margin-left: 5px;
+  }
+  .imageContainer {
+    width: 330px;
+    height: 300px;
+  }
+
+  .GoogleMyMap {
+    width: 300px;
+    overflow: hidden;
+  }
+  .googleMapBlock{
+    margin-top: 10px;
+    width: 300px;
+    height: 390px;
+  }
+  
+  .iframeContainer iframe {
+    width: 390px !important;
+  }
+}
+
+//detailSection1
+.pageContainer {
+  background-color: #22333B;
+  background-image: url('/homePage/soundWave.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .breadcrumb {
+      margin-left: 0;
+      @media (min-width: 1440px) {
+          margin-left: 0;
+          align-self: flex-start;
+      }
+  }
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.imageContainer {
+  margin-right: 50px;
+  width: 600px;
+  height: 300px;
+}
+
+@media (max-width: 390px) {
+  .flexContainer {
+      flex-direction: column;
+      align-items: center;
+  }
+  .cardContainer {
+      margin-top: 10px;
+      width: 100%;
+  }
+  .breadcrumbStyle, .headerStyle {
+      text-align: center;
+      margin: auto;
+  }
+  .introduceStyle, .pidBody, .blockMask, .blockMask2 {
+      text-align: center;
+      width: 330px;
+  }
+  .imageBlock {
+      margin-left: 5px;
+  }
+  .imageContainer {
+      width: 330px;
+      height: 300px;
+  }
+}
+
+
+

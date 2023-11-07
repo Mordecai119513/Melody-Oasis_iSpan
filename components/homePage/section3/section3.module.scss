@@ -1,0 +1,99 @@
+#app {
+  height: 50%;
+}
+
+#Section3-body, #app {
+  position: relative;
+  height: 768px;
+}
+
+#Section3-body {
+  background: #22333B;
+  // font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.section3Container {
+  background-color: #22333B;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.section3Content {
+  // background-color: #5E503F;
+  // width: 700px;
+  // height: 70px;
+  text-align: center;
+  line-height: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .section3Text {
+    font-family: 'SoukouMincho';
+    font-size: 32px;
+    color: #fff;
+  }
+}
+
+.button {
+  background-color: #5E503F;
+  width: 180px;
+  height: 43px;
+  border-radius: 5em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #22333B;
+}
+@media (max-width: 390px) {
+  .section3Container {
+    .section3Content {
+      width: 80%; 
+      height: auto;
+
+      .section3Text {
+        font-size: 24px;
+      }
+    }
+  }
+  
+  .SwiperBlock {
+    height: auto;
+    min-height: 300px; // 這只是一個例子，您可以根據需要調整
+  }
+}

@@ -1,0 +1,63 @@
+.eventContainer{
+    font-family: 'Taipei Sans TC Beta';
+  }
+  .headerStyle {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-family: 'Taipei Sans TC Beta';
+  }
+  .SortButtonStyle {
+    grid-column: 2 / 3;
+    text-align: center;
+  }
+  
+  .sectionContent {
+    text-align: center;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 1rem; 
+    margin-bottom: -40px;
+  
+    .cardRow {
+      flex: 1; 
+      max-width: calc(48% - 1rem); 
+      margin: 0px;
+      transform: scale(0.8);  // 這將卡片縮小到其原始大小的90%
+      transition: transform 0.3s ease-in-out;  
+    }
+  }
+  
+  .paginationContainerStyle {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .rightBlock {
+    overflow: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .cardContainer {
+      justify-content: center;
+  
+      .cardRow {
+        max-width: 330px; 
+        width: 100%; 
+        margin: 10px 0;
+        transform: scale(0.9);
+      }
+    }
+    .OffcanvasButtonStyle {
+      grid-column: 2 / 3;
+      text-align: center;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+  }
+  

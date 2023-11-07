@@ -1,0 +1,106 @@
+/* 卡片容器 */
+.product-card {
+    display: flex;
+    flex-direction: column; /* 将内容垂直排列 */
+    // width: 615px;
+    // height: 450px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #181818;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 图片容器 */
+  .product-image-container {
+    width: 100%; /* 让图片容器占满卡片的宽度 */
+    height: 70%; /* 图片容器高度 */
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* 图片样式 */
+  .product-image {
+    width: 100%;
+    height: 100%; /* 自动调整高度以保持图片比例 */
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* 商品信息容器 */
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* 让信息容器占满卡片的宽度 */
+    padding: 10px;
+    margin-top: 10px; /* 添加顶部间距 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    justify-content: space-between; /* 在垂直方向上，将内容放在顶部和底部之间 */
+  }
+  
+  /* 商品标题 */
+  .product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0px;
+    color: white;
+    word-wrap: break-word; /* 启用自动换行 */
+  }
+  
+  /* 商品描述 */
+  .product-description {
+    margin: 10px 0; /* 调整间距 */
+    white-space: normal; /* 设置文字正常换行 */
+    margin: 20px 0 10px 0; /* 添加底部间距 */
+    max-height: 75px; /* 设置最大高度为五行的高度 */
+    // min-height: 100px;
+    text-wrap: wrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+    color: white;
+    flex-grow: 1;
+  }
+  // 老師名稱
+  .product-teacher{
+    color: white;
+    // font-weight: bold;
+    // margin: 10px;
+  }
+  
+  
+  /* 商品价格 */
+  .product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: white;
+    align-self: flex-start; /* 将价格放在底部 */
+  }
+  
+  @media (max-width:390px) {
+    .product-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // width: 360px;
+      // height: 600px; /* 调整卡片的最大高度 */
+    }
+    .product-image-container img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  

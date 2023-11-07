@@ -1,0 +1,111 @@
+// 檔案位置: styles/global.scss
+// 變數覆蓋用 (Variable overrides)
+// 全站配色 colors
+$primary: #EAE0D5; // 強調色
+$secondary: #5E503F; // 標題底色
+$success: #22333B; // 主要背景色
+$info:#FFFFFF; // 字體主色 
+$warning:#C6AC8F; // 基本強調色
+$danger: #0A0908; // 字體強調色
+$light:#181818; // 卡片底色
+$dark:#B3B3B3; // 字體次要色
+
+// 背景色(主要背景色2):#212A2E - 這個用背景色(主要背景色1)替代-Eddy的建議
+
+
+// 按鈕圓角邊 button radius
+$btn-border-radius: 5em;
+$btn-border-radius-sm: 5em;
+$btn-border-radius-lg: 5em;
+$paragraph-margin-bottom:0;
+// ↑↑↑  變數覆蓋(Variable overrides) 要寫在這行"上面"  ↑↑↑
+// 導入所有 bootstrap 樣式
+@import '~bootstrap/scss/bootstrap';
+// ↓↓↓  其它客製樣式要寫在這行的"下面" ↓↓↓
+
+// google Noto Sans TC 字體
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap';
+
+    // 以下為中英使用字體
+    @font-face {
+      font-family: 'Jiao Std W8';
+      src: url('/fonts/Jiao-Std-W8-2.otf') format('opentype');
+      font-weight: 800;
+      font-style: normal;
+  }
+    @font-face {
+      font-family: 'SoukouMincho'; 
+      src: url('/fonts/SoukouMincho.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Taipei Sans TC Beta';
+      src: url('/fonts/TaipeiSansTCBeta-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+
+// 定義中文字體用
+body {
+  font-family: 'Taipei Sans TC Beta', 'Jiao Std W8', 'SoukouMincho','Noto Sans TC Regular', Helvetica, Arial, 'PingFang TC',
+    '苹方-繁', 'Heiti TC', '黑體-繁', 'Microsoft JhengHei', '微軟正黑體',
+    // Cross-platform generic font family (default user interface font)
+    system-ui,
+    // Safari for macOS and iOS (San Francisco)
+    -apple-system,
+    // Windows
+    'Segoe UI',
+    // Android
+    Roboto,
+    // Basic web fallback
+    'Helvetica Neue',
+    Arial,
+    // Linux
+    'Noto Sans',
+    'Liberation Sans',
+    // Sans serif fallback
+    sans-serif,
+    // Emoji fonts
+    'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    
+    
+}
+h1{
+  font-family: 'Taipei Sans TC Beta', 'Jiao Std W8';
+  font-size: 32px;
+  font-weight: bold;
+}
+h2{
+  font-family: 'Taipei Sans TC Beta', 'Jiao Std W8';
+  font-size: 24px;
+  font-weight: bold;
+}
+h3{
+  font-family: 'Taipei Sans TC Beta', 'Jiao Std W8';
+  font-size: 18.7px;
+  font-weight: bold;
+}
+h4{
+  font-size: 16px;
+  font-weight: bold;
+}
+h5{
+  font-size: 13.3px;
+}
+h6{
+  font-size: 12px;
+}
+p{
+  font-size: 16px;
+}
+nextjs-portal {
+  display: none;
+}
+
+//cart scss
+@import "styles/cartScss/cart.scss"
+

@@ -1,0 +1,30 @@
+
+.outerBox {
+  //   background: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .table {
+    width: 88vw;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+
+    @media screen and (max-width: 390px) {
+      th {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.swiperOutside {
+  //  overflow: hidden;
+  //  background: #000;
+  --swiper-navigation-color: white;
+  --swiper-theme-color: white;
+}

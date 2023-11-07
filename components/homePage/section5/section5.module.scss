@@ -1,0 +1,67 @@
+.section5Container {
+  background-color: #22333B;
+  background-image: url('/homePage/section5Banner.png');
+  background-size: 70%;
+  background-repeat: no-repeat; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+  
+  .section5Content {
+    // background-color: #5E503F;
+    // width: 700px;
+    // height: 70px;
+    text-align: center;
+    line-height: 70px;
+    
+    .section5Text {
+      font-family: 'SoukouMincho';
+      font-size: 32px;
+      color: #fff;
+    }
+  }
+  
+  .contentContainer {
+    display: flex;
+    margin-top: 0px;
+  }
+  
+  .cardContainer {
+    max-width: fit-content;
+    margin-top: 0px;
+  }
+
+  .linesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .line {
+      width: 300px; 
+      border-bottom: 1px solid white;
+      margin-bottom: 10px; 
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+
+      .albumName,
+      .artistName {
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .section5Container {
+    .section5Content {
+      width: 80%; 
+      height: auto;
+      
+      .section5Text {
+        font-size: 24px;
+      }
+    }
+  }
+}

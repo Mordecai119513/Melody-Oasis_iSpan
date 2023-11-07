@@ -1,0 +1,31 @@
+{
+    "shoppingCart": [
+      {
+        "picture":"cc",
+        "id": 1,
+        "name": "Nike",
+        "price": 34,
+        "quantity": 2
+       
+      },
+      {
+        "id": 2,
+        "name": "adidas",
+        "price": 50,
+        "quantity": 4
+      },
+      {
+        "id": 3,
+        "name": "PUMA",
+        "price": 10,
+        "quantity": 1
+      },
+      {
+        "id": 4,
+        "name": "New Balance",
+        "price": 23,
+        "quantity": 4
+      }
+    ]
+  }
+  

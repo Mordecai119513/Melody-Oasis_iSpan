@@ -1,0 +1,30 @@
+/* Sidebar Styles */
+.sidebar {
+    background-color: #5E503F;
+    color: #fff;
+    width: 240px; /* 設定寬度為 240px */
+    height: 100vh; /* 設定高度為 100vh，相當於 100% 螢幕高度 */
+    /* 移除 position: fixed; */
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.sidebar h2.custom-font-size {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sidebar hr {
+    border-top: 1px solid #fff;
+    margin: 10px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li.custom-font-size {
+    margin-bottom: 10px;
+}

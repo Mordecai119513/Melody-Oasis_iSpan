@@ -1,0 +1,52 @@
+// .headerStyle {
+//   grid-column: 2 / 3;
+//   text-align: center;
+//   margin-bottom: 20px;
+//   color: #ffffff;
+// }
+// .SortButtonStyle {
+//   grid-column: 2 / 3;
+//   text-align: center;
+// }
+// .sectionContent {
+//   // text-align: center;
+// }
+// .cardContainer {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   margin-top: 10px;
+
+//   .cardRow {
+//     width: 500px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 50px;
+//     margin: 20px;
+
+//     > *:not(:last-child) {
+//       margin-right: 100px;
+//     }
+//   }
+// }
+// .paginationContainerStyle {
+//   margin-top: 20px;
+//   text-align: center;
+// }
+.rightBlock {
+  overflow: hidden;
+}
+
+// .productcard {
+//   width: 500px;
+// }
+
+@media screen and (max-width: 390px) {
+  .productcard {
+      width: 100%; /* 調整卡片寬度 */
+
+  }
+  
+  
+}

@@ -1,0 +1,16 @@
+/* index */
+.w160 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* [pid] */
+.invert{
+    filter: invert(100%);
+}
+
+/* card-content */
+.darken:hover{
+  filter: invert(20%);
+}

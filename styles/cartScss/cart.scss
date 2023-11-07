@@ -1,0 +1,346 @@
+/* cart.css */
+// 全域巢狀
+.pingYeh{
+
+$progress:rgba(217, 217, 217, 0.30);
+
+.container {
+  max-width: 1200px;
+}
+// 頁面標題
+.topName{
+  padding: 60px 0px 40px 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: $primary;
+}
+.main{
+  padding-bottom: 10px;
+  // margin-bottom: 20px;
+  background:$success ;
+}
+.progressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  margin-bottom: 72px;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border: 2px solid $progress;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background-color 0.5s ease-in-out;
+  transition-timing-function:linear;
+  background-color:$progress;
+  /* margin-right: 10px; */
+}
+
+.circle.filled {
+  background-color:$warning;
+  color: white;
+  border: none;
+  /* transition: .5s; */
+}
+
+.line {
+  width: 250px;
+  height:20px;
+  background-color: #c1d2e4;
+  transition-timing-function:linear;
+  transition-duration:  0.5s ;
+  background-color:$progress;
+  /* margin-right: 10px; */
+}
+
+.line.filled {
+  background-color: $warning;
+  /* transition: .5s; */
+  width: 100%;
+}
+//cartPage 內容
+.commodity{
+  display: flex;
+  padding: 80px 35px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #212A2E;
+  color: #fff;
+}
+.buttonCart{
+  margin-right: 40px;
+  background-color:$secondary;
+  border-radius: $secondary;
+  color: #ffff;
+  padding: 10px 52px;
+  border: none;
+  cursor: pointer; 
+  
+}
+.buttonCollect{
+  margin-left: 40px;
+  background: $dark;
+  color: $info;
+  padding: 10px 52px;
+  cursor: pointer; 
+  border: none;
+
+}
+.horizontal-line{
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin: 10px auto;
+}
+//內容標題
+.listBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: $secondary;
+  padding-left: 100px;
+}
+
+
+.item{
+  color: #fff;
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  
+}
+//購物車商品
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  padding-left: 10px;
+  align-items: center; /* 垂直居中对齐产品 */
+  margin: 20px; /* 用于在产品之间添加间距 */
+}
+.productName{
+  // padding-right: 200px;
+  display: flex;
+}
+.productScss{
+  display: flex;
+  padding-right: 120px;
+  justify-content: flex-end;
+}
+//cartPage-RWD
+// @media (max-width: 768px) {
+//   .container.commodity {
+//     padding: 20px; 
+//     max-width: 390px;
+//   }
+//   .listBar{
+//     width: 100%;
+//     padding-left: 20px;
+//   }
+//   .productContainer{
+//     width: 100%;
+//     padding-left: 20px;
+//   }
+// }
+
+
+//結帳、上下頁按鈕樣式
+.page{
+  display: flex;
+  justify-content:flex-end;
+  align-items: flex-end;
+  height: 20vh;
+}
+.buttonLeft{
+  padding: 20px;
+  margin: 10px;
+  background-color:$primary;
+  color: #ffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.buttonRight{
+  align-self: flex-end;
+  padding: 20px;
+  margin: 10px;
+  background-color:$secondary;
+  color: #ffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.buttonBuy{
+  padding: 20px;
+  margin: 10px;
+  background-color:$secondary;
+  color: #ffff;
+  border-radius: 50px ;
+  display: flex;
+  align-items: center;
+}
+.bWord{
+  display: flex;
+  justify-content: center;
+}
+.icon{
+  margin-right: 15px;
+}
+
+//orderPage commodity 內容樣式
+.orderCommodity{
+  display: flex;
+  padding: 40px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #212A2E;
+  color: #fff;
+  // gap: 72px;
+}
+//orderPage內容標題
+.pageTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: $secondary;
+  padding-left: 20px;
+  margin:20px 0px;
+}
+//orderPage input樣式
+.radioCon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.forInput{
+  margin: 15px;
+}
+
+.inputContainer{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+// .forInput1{
+//   display: flex;
+//   justify-content: space-between;
+
+// }
+.forInput2{
+  display: flex;
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+.inputRow {
+  display: flex;
+  align-items: center;
+}
+.inputTitle{
+   display: flex;
+   flex-direction: row;
+  margin: 15px;
+
+  }
+
+
+
+//orderConfirm頁面 標題欄位
+.order-table{
+  // display: flex;
+  // justify-content: space-between;
+  // width: 1100px;
+  // height: 70px;
+  // background: $secondary;
+  margin-top: 20px;
+  // border-collapse: collapse;
+  width: 100%;
+}
+.order-table th, .order-table td {
+  padding: 8px;
+  text-align: left;
+}
+.order-table th {
+  background-color:$secondary ;
+}
+.totalContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.totalAmount{
+  display: flex;
+  margin-left: auto;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-top: 20px;
+  
+}
+
+/* 添加分隔线样式 */
+.line{
+  border-top: 1px solid #fff;
+  margin-top: 10px;
+  width: 100%;
+}
+
+//orderFinish頁面
+.commodity2{
+  display: flex;
+  padding: 80px 35px;
+  flex-direction: column;
+  background: #212A2E;
+  color: #fff;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  // width: 500px;
+  height: 200px;
+}
+.pWord{
+  padding: 10px;
+  margin: 10px;
+}
+.buttons{
+  display: flex;
+}
+//ant-css
+.custom-step{
+  color: #fff;
+}
+//list bar css
+.listContainer {
+  // display: flex;
+  // text-align: center;
+  // margin: 0 auto;
+  // width: 80%; /* 根据需要调整宽度 */
+}
+.thead{
+  background-color: $secondary;
+  padding: 20px;
+  margin: 10px;
+}
+
+.ttop{
+  margin-top: 10px;
+}
+.tbody{
+  padding: 5px;
+}
+}

@@ -1,0 +1,111 @@
+.card {
+  width: 567px;
+  height: 335px;
+  margin: 0 auto;
+  padding: 30px 10px 0px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #5E503F;
+  overflow: hidden;
+  border: none;
+
+  .positionRelative {
+    position: relative;
+  }
+
+  &-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-text {
+    font-weight: 500;
+    margin-bottom: 0.15rem;
+    color: #464646;
+
+    &.note-text {
+      color: #103773;
+    }
+  }
+
+  .likeIcon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .shoppingCartIcon {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+}
+
+.currency {
+  font-size: 24px; 
+  color: #fff; 
+  font-weight: 500;
+}
+.cardTextOne{
+  padding-top: 5px;
+  font-size: 16px; 
+  color: #EAE0D5; 
+  font-weight: 500;
+}
+.cardTextTwo{
+  padding-top: 5px;
+  font-size: 16px; 
+  color: #EAE0D5; 
+  font-weight: 500;
+}
+.priceText{
+  font-size: 24px; 
+  color: #EAE0D5; 
+  font-weight: 500;
+}
+
+.button {
+  background-color: #EAE0D5;
+  width: 263px;
+  height: 73px;
+  margin-top: 5px;
+  border-radius: 5em;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5E503F;
+}
+@media (max-width: 390px) {
+  .card {
+    width: 330px;
+  }
+
+  .buttonContainer {
+    flex-direction: column; 
+  }
+
+  .button {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+}
+

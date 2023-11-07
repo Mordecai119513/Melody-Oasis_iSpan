@@ -1,0 +1,87 @@
+.section2Container {
+  background-color: #22333B;
+  background-image: url('/homePage/soundWave.png');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // min-height: 80vh;
+  font-family: 'Taipei Sans TC Beta';
+
+  .section2Content {
+    // background-color: #5E503F;
+    // width: 700px;
+    // height: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 50px;
+
+    .section2Text {
+      font-family: 'SoukouMincho';
+      font-size: 32px;
+      color: #fff;
+    }
+  }
+}
+
+.cardWrapperContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 10px;
+  width: 40%;
+
+  .cardWrapper {
+    flex: 1;
+    margin: 0 2px;
+    box-sizing: border-box;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  .button {
+    background-color: #5E503F;
+    width: 180px;
+    height: 43px;
+    border-radius: 5em;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 390px) {
+  .section2Container {
+    .section2Content {
+      width: 80%;
+      height: auto;
+
+      .section2Text {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .cardWrapperContainer {
+    flex-direction: column;
+    padding: 0;
+    width: 370px;
+    overflow: hidden;
+
+    .cardWrapper {
+      margin: 10px 0;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.albumProductCardContainer {
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  margin: 10px;
+}
+@media (max-width: 390px) {
+  .albumProductCardContainer {
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    margin: 10px;
+    margin-left: 45px;
+  }
+}

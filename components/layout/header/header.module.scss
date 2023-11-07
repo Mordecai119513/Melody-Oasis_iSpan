@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding-inline: 2rem;
+}
+
+.headerNav {
+  ul {
+    height: 4rem;
+    display: flex;
+    column-gap: 42px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    text-decoration: none;
+    &:hover {
+      border-bottom: #fff 1px solid;
+    }
+  }
+  a {
+    text-decoration: none;
+    align-items: center;
+    transition: 0.4s;
+    color: #fff;
+    &:hover {
+      font-weight: 900;
+    }
+  }
+}
+.dropdownDesign {
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 2s;
+  color: #fff;
+  margin: 1rem;
+}
+.memberDropdown {
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  color: #fff;
+  margin: 1rem;
+
+  &:hover {
+    font-weight: 900;
+    // border-bottom: #fff 2px solid;
+    // font-size: 1.5rem;
+    color: #fff;
+  }
+}
+.navBtn {
+  text-decoration: none;
+  align-items: center;
+  transition: 0.4s;
+  color: #fff;
+}
+.login_ShoppingCart_Icon {
+  ul {
+    column-gap: 1rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  li {
+    list-style: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .avatar {
+   
+    img {
+      background: #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+.username {
+  @media screen and (max-width: 391px) {
+    display: none;
+  }
+}
+
+.mobileNav {
+  height: 100vh;
+  position: fixed;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  z-index: 999;
+  padding-block: 50px;
+  padding-inline: 24px;
+  width: 277px;
+  top: 0;
+  right: -277px;
+  background: #181818;
+  list-style: none;
+  transition: 0.5s;
+  li {
+    padding-block: 10px;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.active {
+  right: 0px;
+}

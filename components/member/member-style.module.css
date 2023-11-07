@@ -1,0 +1,21 @@
+
+.msgError {
+    color: red;
+  } 
+.password {
+    position: relative;
+  }
+ .show {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+.link{
+text-decoration: none;
+}
+.link:hover,.link:visited{
+  /* text-decoration: none; */
+  color: #EAE0D5;
+}
+  

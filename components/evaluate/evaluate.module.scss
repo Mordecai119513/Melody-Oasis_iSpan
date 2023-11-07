@@ -1,0 +1,129 @@
+.outsideBox {
+  // height: 78vh;
+  background: #212a2e;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  margin-bottom: 2rem;
+  row-gap: 3rem;
+  @media screen and (max-width: 391px) {
+    align-items: center;
+    flex-direction: column;
+    padding-block: 0;
+  }
+  .titlePosition {
+    display: flex;
+    justify-content: start;
+    @media screen and (max-width: 391px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  .title {
+    background: #c6ac8f;
+    color: #0a0908;
+    width: fit-content;
+    height: fit-content;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    text-align: center;
+    // @media screen and (max-width: 391px) {
+    //  justify-content: center;
+    // }
+  }
+  .score {
+    p {
+      font-size: 4rem;
+    }
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .ant-rate-star-zero {
+      color: #0a0908;
+    }
+    @media screen and (max-width: 391px) {
+      align-items: center;
+      p {
+        font-size: 2rem;
+      }
+    }
+    .star {
+      padding: 0;
+    }
+  }
+  .scoreBar {
+    margin-block: 1rem;
+    padding-right: 2rem;
+    display: block;
+    width: 100%;
+    @media screen and (max-width: 391px) {
+      display: none;
+    }
+    .star {
+      padding: 0;
+    }
+  }
+  .starAndAccount {
+    display: flex;
+    width: auto;
+  }
+}
+
+.commentArea {
+  padding: 1rem;
+  margin-block: 2rem;
+  background: #22333b;
+  border-radius: 1rem;
+}
+.commentBody {
+  display: flex;
+  flex-direction: column;
+  // background: #000;
+  height: calc(100% - 4rem);
+  justify-content: space-between;
+}
+.profilePhoto {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #fff;
+}
+.commentWriteBody {
+  // height: 10rem;
+}
+.commentWrite {
+  // margin-inline: 1rem;
+  padding-right: 2.5rem;
+  @media screen and (max-width: 391px) {
+    padding-right: 0;
+  }
+  .userPhoto {
+    margin-block: 1rem;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+  }
+  .starChoose {
+    padding-block: 0.5rem;
+    line-height: 2.5rem;
+    width: fit-content;
+  }
+  textarea {
+    height: auto;
+    overflow: visible;
+    resize: none;
+    margin-block: 1rem;
+  }
+}
+.button {
+  padding-inline: 1rem;
+  border-radius: 50px;
+  background: #eae0d5;
+  transition: 0.2s;
+  color: black;
+  border: none;
+  &:hover {
+    background: #5e503f;
+    color: #eae0d5;
+  }
+}

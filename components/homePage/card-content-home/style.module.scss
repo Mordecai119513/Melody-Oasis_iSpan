@@ -1,0 +1,27 @@
+/* index */
+.w160 {
+  width: 100%;
+  height: auto;
+  
+  object-fit: cover;
+}
+
+/* [pid] */
+.invert{
+  filter: invert(100%);
+}
+
+/* 響應式設計部分 */
+@media (max-width: 390px) {
+  .w160 {
+    max-width: 340px; /* 例如: 原始圖片寬度 */
+    width: 30%; /* 這將使圖片在較小的裝置上稍微小一些，為了留有邊距 */
+    height: 30%;
+  }
+
+  /* 其他你希望調整的樣式也可以放在這裡，例如：
+  .some-other-class {
+    some-property: some-value;
+  }
+  */
+}

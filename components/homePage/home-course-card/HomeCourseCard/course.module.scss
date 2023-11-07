@@ -1,0 +1,84 @@
+/* 卡片容器 */
+.product-card {
+  display: flex;
+  width: 615px;
+  height: 300px; /* 调整卡片的最大高度 */
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #181818;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 图片容器 */
+.product-image-container {
+  flex-grow: 1;
+  width: 200px; /* 图片宽度 */
+  height: 100%; /* 与卡片高度相同 */
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.product-image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* 图片样式 */
+.product-image {
+  width: 100%; /* 图片宽度 */
+  height: 100%; /* 自动调整高度以保持图片比例 */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* 商品信息容器 */
+.product-details {
+  width: 200px; /* 让信息容器填满剩余的可用空间 */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 20px; /* 添加右移的间距 */
+}
+
+/* 商品标题 */
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0px;
+  color: white;
+}
+
+/* 商品描述 */
+.product-description {
+  margin: 20px 0 10px 0; 
+  max-height: 75px; 
+  text-wrap: wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  color: white;
+  flex-grow: 1;
+}
+
+/* 商品价格 */
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  align-items: end;
+}
+
+/* RWD for max-width 390px */
+@media (max-width: 390px) {
+  .product-card {
+    width: 370px;
+  }
+}

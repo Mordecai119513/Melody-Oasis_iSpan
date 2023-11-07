@@ -1,0 +1,64 @@
+.card {
+  width: 460px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #C6AC8F;
+  overflow: hidden; 
+  border: none;
+
+  .positionRelative {
+    position: relative;
+  }
+
+  &-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-text {
+    font-weight: 500;
+    margin-bottom: 0.15rem;
+    color: #464646;
+
+    &.note-text {
+      color: #103773;
+    }
+  }
+
+  .likeIcon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .shoppingCartIcon {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+}
+
+.h-currency {
+  font-size: 24px; // 設定字體大小為24px
+  color: #fff; // 白色文字
+  font-weight: 500;
+}
+@media (max-width: 390px) {
+  .card {
+    width: 330px;
+  }
+}

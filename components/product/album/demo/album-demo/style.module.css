@@ -1,0 +1,52 @@
+/* index */
+.w160 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+.w230 {
+  width: 168px; 
+}
+@media (min-width: 768px) {
+  .w230 {
+      width: 210px; /* 大於768px時的寬度 */
+  }
+}
+/* @media (min-width: 1600px) {
+    .w230 {
+        width: 300px; 
+    }
+} */
+
+.noBorder {
+  --bs-border-width: 0;
+}
+.noSpaceX {
+  padding: var(--bs-card-spacer-y) 0;
+}
+.imgWrap {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  /* overflow-y: clip; */
+  position: relative;
+  /* padding-top: 100%;  */
+}
+.imgWrap::before {
+  content: "";
+  padding-top: 100%; /* 高度等於寬度 */
+  /* display: block; */
+  height: 0;
+}
+.minHeight {
+  /* min-height: 200px; */
+}
+.darken:hover{
+    filter: invert(20%);
+}
+.ellipsis {
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

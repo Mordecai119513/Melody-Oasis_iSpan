@@ -1,0 +1,35 @@
+/* Sidebar Styles */
+.sidebar {
+    background-color: #5E503F;
+    color: #fff;
+    width: 240px; 
+    height: 100vh; 
+    top: 0;
+    left: 0;
+    padding: 20px;
+    
+    h2 {
+      &.custom-font-size {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+    }
+    
+    hr {
+      border-top: 1px solid #fff;
+      margin: 10px 0;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      &.custom-font-size {
+        text-center: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  

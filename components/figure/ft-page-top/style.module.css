@@ -1,0 +1,33 @@
+.w160 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .imgwrap{
+      width: 300px;
+      height: 300px;
+  }
+  @media (max-width: 768px) {
+    .imgwrap{
+      width: 120px;
+      height: 120px;
+  }
+  }
+  
+  .mainBg{
+    background:linear-gradient(#5E503F 0%, #5E503F 75%, #22333B 75%, #22333B 100%);
+  }
+  @media (max-width: 768px) {
+    .mainBg{
+      background:linear-gradient(#5E503F 0%, #5E503F 100%);
+    }
+  }
+  .btnRowSmBg{
+    background-color: #5E503F;
+  }
+  @media (max-width: 768px) {
+    .btnRowSmBg{
+      background-color: #5E503F;
+    }
+  }

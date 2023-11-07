@@ -1,0 +1,38 @@
+.detailPageButton {
+  .shoppingCartIcon {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+  .AiOutlineHeart {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+
+  .button {
+    background-color: #EAE0D5;
+    width: 263px;
+    height: 73px;
+    margin-right: 20px;
+    border-radius: 5em;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background-color: #5E503F;
+    justify-content: flex-start; 
+  }
+
+  @media (max-width: 390px) {
+    .button {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+  }
+}

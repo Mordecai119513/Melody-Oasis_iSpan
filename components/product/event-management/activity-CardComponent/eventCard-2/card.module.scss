@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Jiao Std W8';
+  font-weight: bold; 
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #C6AC8F;
+  overflow: hidden;
+  border: none;
+
+  .cardBody {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .cardTitle {
+      font-weight: 600;
+      color: #464646;
+      margin-bottom: 0.5rem;
+    }
+
+    .cardText {
+      font-weight: 400;
+      color: #464646;
+      margin-bottom: 1rem;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .iconContainer {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        span {
+          margin-left: 10px;
+        }
+
+        .likeIcon, .shoppingCartIcon {
+          color: #fff;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+.iconContainer {
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+}
+
+.iconContainer:hover {
+  transform: scale(1.1); 
+}
+
+
+@media (max-width: 390px) {
+  .card {
+    width: 330px;
+  }
+}

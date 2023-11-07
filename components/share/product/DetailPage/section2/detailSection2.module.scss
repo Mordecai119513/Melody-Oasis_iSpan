@@ -1,0 +1,75 @@
+.blockMask {
+  width: 1200px;
+  height: 1500px;
+  background-color: #212A2E;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introducepageStyle {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 10px;
+}
+
+.contentWrapper {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+}
+
+.headerStyle {
+  color: white;
+  display: inline-block;
+  margin: 0px;
+  text-align: center;
+}
+
+.headerStyle .titleintroduce,
+.headerStyle .titleintroduceTwo {
+  padding-block: 10px;
+  padding-inline: 18px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.headerStyle .introduceStyle {
+  padding-block: 10px;
+  padding-inline: 18px;
+  font-size: 18.72px;
+  font-weight: 700;
+}
+
+.introduceStyle {
+  margin: 16px;
+  color: #eae0d5;
+  line-height: 2;
+}
+
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 390px) {
+  .introduceStyle {
+    padding-right: 25px;
+    text-align: center;
+    width: 330px;
+  }
+
+  .blockMask {
+    text-align: center;
+    width: 330px;
+    height: 850px;
+  }
+}

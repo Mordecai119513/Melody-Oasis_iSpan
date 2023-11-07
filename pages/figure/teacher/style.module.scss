@@ -1,0 +1,91 @@
+.pageStyle {
+    background-color: #22333b;
+    min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // gap: 40px;
+    // padding: 10px;
+  }
+.teacherStyle{
+  width: 100%;
+  background-color: #5e503f;
+  display: flex;
+  justify-content: start;
+}
+.teachertitleStyle{
+  display: flex;
+  width: 100%;
+  height: 314px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: center;
+}
+.teacherimageStyle{
+  width: 250px; /* 图片宽度 */
+  height: 250px; /* 与卡片高度相同 */
+  // overflow: hidden;
+  border-radius: 150px;
+  margin-right: 20px;
+  // transform: translate(110%, 30%);
+}
+.teachernameStyle{
+  color: white;
+  margin-left: 10px; /* 調整左邊距，根據需要調整數值 */
+  display: flex;
+  flex-direction: column;
+ 
+  .h5{
+    color: #ccc;
+  }
+}
+.teacherintroduceStyle{
+  color: white;
+
+  .teacherintroducetitle1Style{
+    text-align: center;
+    margin: 40px;
+  }
+  .teacherintroducetitle2Style{
+    margin: 0 20px 0 20px ;
+  }
+}
+.buttonStyle{
+  width: 132px;
+  height: 45px;
+  border-radius: 30px ;
+  color: black;
+  background-color: #eae0d5;
+  font-weight: 800;
+}
+.teacherclassStyle{
+  color: white;
+  margin-top: 70px;
+}
+.cardContainerStyle {
+  display: flex;
+  flex-direction: row; /* 设置为水平排列 */
+  align-items: center;
+  justify-content: center;
+}
+.morebutton{ 
+  color: white;
+  width: 150px;
+}
+
+@media (max-width: 390px) {
+  .teacherimageStyle{
+    width: 150px; /* 图片宽度 */
+    height: 150px; /* 与卡片高度相同 */
+    border-radius: 150px;
+    transform: translate(15%, 0%);
+  }
+  .teachernameStyle{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+}
